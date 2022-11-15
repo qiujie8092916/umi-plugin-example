@@ -1,0 +1,72 @@
+{
+  "name": "umi-plugin-example",
+  "version": "2.1.6",
+  "description": "",
+  "author": "",
+  "contributors": [
+    "empty"
+  ],
+  "repository": "https://github.com/qiujie8092916/umi-plugin-example.git",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "cross-env APP_ROOT=example umi dev",
+    "build": "father-build",
+    "build:watch": "father-build --watch",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "test:update": "umi-test --updateSnapshot",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "lint-staged": {
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write",
+      "git add"
+    ],
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "peerDependencies": {
+    "umi": ">=3",
+    "react": ">=16"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/react-hooks": "^5.0.3",
+    "@types/blueimp-md5": "^2.18.0",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.22",
+    "@umijs/bundler-utils": "^3.5.35",
+    "@umijs/test": "^3.3.7",
+    "@umijs/test-utils": "^3.3.7",
+    "@umijs/utils": "^3.5.35",
+    "blueimp-md5": "^2.18.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "conventional-changelog-cli": "^2.1.1",
+    "cross-env": "^7.0.3",
+    "express": "^4.15.3",
+    "father-build": "^1.19.0",
+    "lerna": "^3.20.2",
+    "lint-staged": "^10.0.8",
+    "npm-run-all": "^4.1.5",
+    "pify": "^5.0.0",
+    "prettier": "^2.2.1",
+    "query-string": "^6.13.8",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.9.0",
+    "test-umi-plugin": "^0.1.0",
+    "umi": "^3.5.35",
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "files": [
+    "lib"
+  ]
+}

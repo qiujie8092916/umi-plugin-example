@@ -1,0 +1,14 @@
+# yarn.lock
+yarn-error.log
+package-lock.json
+
+lib
+dist
+node_modules
+.umi
+.umi-production
+
+
+.umi
+.idea
+
