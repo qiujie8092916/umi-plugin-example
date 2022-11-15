@@ -30,7 +30,7 @@
     ]
   },
   "peerDependencies": {
-    "umi": ">=3",
+    "umi": ">=4",
     "react": ">=16"
   },
   "devDependencies": {
@@ -39,10 +39,10 @@
     "@types/blueimp-md5": "^2.18.0",
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.22",
-    "@umijs/bundler-utils": "^3.5.35",
+    "@umijs/bundler-utils": "^4.0.30",
     "@umijs/test": "^3.3.7",
     "@umijs/test-utils": "^3.3.7",
-    "@umijs/utils": "^3.5.35",
+    "@umijs/utils": "^4.0.30",
     "blueimp-md5": "^2.18.0",
     "body-parser": "^1.19.0",
     "chalk": "^4.1.0",
@@ -60,7 +60,7 @@
     "react-dom": "^16.12.0",
     "react-test-renderer": "^16.9.0",
     "test-umi-plugin": "^0.1.0",
-    "umi": "^3.5.35",
+    "umi": "^4.0.30",
     "yorkie": "^2.0.0"
   },
   "gitHooks": {
